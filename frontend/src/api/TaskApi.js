@@ -8,8 +8,7 @@ export const getAllTasks = async (queryParams = {}) => {
   const URI = `${URL_PREFIX}/?${queryString}`;
 
   try {
-    const token = localStorage.getItem("access_token");
-    const axiosInstance = instancedBaseUrl(token);
+    const axiosInstance = instancedBaseUrl();
     const response = await axiosInstance.get(URI);
     return response.data;
   } catch (error) {
@@ -21,7 +20,9 @@ export const createTask = async ({ title, description, category_id }) => {
   const URI = `${URL_PREFIX}/`;
 
   try {
-    const response = await baseUrl.post(URI, {
+    const token = localStorage.getItem("access_token");
+    const axiosInstance = instancedBaseUrl(token);
+    const response = await axiosInstance.get(URI, {
       title,
       description,
       category_id,
