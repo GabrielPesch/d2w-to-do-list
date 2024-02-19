@@ -22,7 +22,7 @@ export const createTask = async ({ title, description, category_id }) => {
   try {
     const token = localStorage.getItem("access_token");
     const axiosInstance = instancedBaseUrl(token);
-    const response = await axiosInstance.get(URI, {
+    const response = await axiosInstance.post(URI, {
       title,
       description,
       category_id,

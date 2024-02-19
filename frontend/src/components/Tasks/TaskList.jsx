@@ -192,21 +192,15 @@ const TaskList = () => {
                     ) : (
                       <CloseOutlined className="task-list-title-icon" />
                     )}
-                    {task.title.toUpperCase()}
+                    {task.title}
                   </Text>
                 }
                 description={
                   <Collapse
-                    activeKey={
-                      expandedKeys.includes(task.id) ? [task.id.toString()] : []
-                    }
+                    activeKey={expandedKeys.includes(task.id) ? [task.id] : []}
                     bordered={false}
                   >
-                    <Panel
-                      header={false}
-                      key={task.id.toString()}
-                      showArrow={true}
-                    >
+                    <Panel header={false} key={task.id} showArrow={true}>
                       <p>{task.description}</p>
                     </Panel>
                   </Collapse>
