@@ -1,0 +1,98 @@
+.layout {
+  width: 100vw;
+  min-height: 100vh;
+  align-items: center;
+   background-color: #fff;
+  }
+  
+
+.flex {
+  width: 100%;
+  max-width: 1024px;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.sign-out {
+  flex-direction: row-reverse;
+}
+
+.content {
+  max-width: 35%;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.title {
+  text-align: center;
+  padding: 12px;
+}
+
+.button {
+  background: #1890ff;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+}
+
+.input {
+  border-radius: 4px;
+}
+
+.form {
+  width: 100%;
+  max-width: 392px  
+}
+
+.sider {
+  display: flex;
+  width: 65%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+ .sider-sign-up-img {
+    margin-top: 14%;
+  background-image: url('/src/images/stop_thinking.png');
+
+}
+
+.sider-sign-in-img {
+    margin-top: 28%;
+  background-image: url('/src/images/stop_thinking2.png');
+} 
+
+.register-card {
+  flex-direction: column;
+  gap: 10px;
+}
+ 
+@media (max-width: 767px) {
+  .flex {
+    width: 100%;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .form {
+    padding: 24px;
+  }
+
+
+  .sider, .sider-sign-in-img, .sider-sign-in-img {
+    width: 0;
+    background-image: none;
+  }
+
+}
+
