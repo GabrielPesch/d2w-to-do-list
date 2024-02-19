@@ -1,0 +1,13 @@
+.drawer-categories {
+  position: absolute;
+  max-width: 80%;
+}
+
+.drawer-button {
+ width: 160px;
+}
+
+.sidebar-content {
+  background-color: transparent !important;
+}
+
