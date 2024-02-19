@@ -1,0 +1,40 @@
+.task-list-title-icon {
+  padding-right: 10px;
+}
+
+.task-list-list {
+  min-height: 94%;
+  }
+.task-list-item {
+  display: flex;
+  gap: 8px;
+}
+
+.task-list-pagination-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task-list-title-icon {
+  margin-left: 4px;
+}
+
+.task-list-title {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .task-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .task-list-item {
+    gap: 4px;
+  }
+
+  .task-list-pagination-flex {
+  display: flex;
+  justify-content: center;
+}
+}
