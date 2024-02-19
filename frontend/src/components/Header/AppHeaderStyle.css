@@ -1,0 +1,31 @@
+.app-header {
+  text-align: center;
+  color: #fff;
+  height: 64px;
+  padding-inline: 48px;
+  line-height: 64px;
+  background-color: #4096ff !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+.header-icon {
+  display: none;
+  visibility: hidden;
+}
+
+.app-header {
+  padding-inline: 0;
+  justify-content: space-around;
+}
+
+.shouldNotShow {
+  visibility: hidden;
+}
+
+.shouldNotShow > * {
+  visibility: visible;
+}
+}
